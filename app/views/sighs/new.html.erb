@@ -1,0 +1,39 @@
+<div class="page-wrapper">
+    <div id="sighs-wrapper">
+
+      <a href="#" class="button-icon toggle-history">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <a href="#" class="button-icon toggle-modal">
+        <i class="fa fa-line-chart"></i>
+      </a>
+
+      <%= link_to 'Breath!', sighs_path, class: 'sigh-button', method: :post %>
+
+      <div class="sighs-stats"> </div>
+
+    </div>
+
+    <div id="history-wrapper">
+      <% @sighs.first(14).each do |key, value| %>
+          <div class="sighs-history">
+              <p class="sighs-history_day"><%= key %></p>
+              <div class="sighs-history_time">
+                <% value.each do |sigh| %>
+                    <div><%= sigh.created_at.strftime('%R') %></div>
+                <% end %>
+              </div>
+          </div>
+      <% end %>
+    </div>
+
+    <div id="chart-modal" class="modal">
+      <a href="#" class="button-icon toggle-modal">
+        <i class="fa fa-times"></i>
+      </a>
+    </div>
+</div>
+
+
+

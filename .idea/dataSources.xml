@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="105458523">
+    <data-source source="LOCAL" name="Rails breath: development" uuid="c610ea00-dcc1-41e4-8009-ea04d73ecc60">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:breath_dev</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails breath: test" uuid="77589385-2857-4943-a6e1-f6a057bd018e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:breath_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails breath: production" uuid="6fbbe410-5571-4412-a08b-4cbd324b4de1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:breath_prod</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
